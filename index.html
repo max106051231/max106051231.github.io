@@ -11,6 +11,7 @@
     <!-- Le styles -->
     <link href="./index_files/bootstrap.css" rel="stylesheet">
     <style type="text/css">
+      
       body {
         padding-top: 20px;
         padding-bottom: 40px;
@@ -46,6 +47,16 @@
       .marketing p + h4 {
         margin-top: 28px;
       }
+      .avatar-object-fit{
+        width: 200px;
+      	border-radius: 50%;
+      	overflow: hidden;
+    		display: block;
+    		width: 100%;
+    		aspect-ratio: 1 / 1;
+    		object-fit: cover;
+	}
+}
     </style>
     <link href="./index_files/bootstrap-responsive.css" rel="stylesheet">
 
@@ -81,7 +92,9 @@
         <div>
           <a href="/" class="flex">
             <span class="sr-only">Max10605</span>
-            <img src="./image/cat.jpg" width="90" height="90" stype="width: 200px;height: 200px;border-radius: 50%;" />
+            <div class="avatar-frame">
+              <img src="images/avatar.jpg" alt="使用者大頭貼">
+            </div>
           </a>
         </div>
         <p class="lead">紀錄所學，以及AI程式的紀錄</p>

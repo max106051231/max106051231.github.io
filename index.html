@@ -60,48 +60,7 @@
   </head>
 
   <body>
-    <script type="text/javascript">
-      var requestURL ="https://raw.githubusercontent.com/max106051231/nspo/refs/heads/main/1.json";
-      var request = new XMLHttpRequest();
-      request.open("GET", requestURL);
-      request.responseType = "json";
-      request.send();
-      request.onload = function () {
-        var superHeroes1 = request.response;
-        document.getElementById("level1").textContent=superHeroes1.hero+" "+superHeroes1.level;
-      };
-      var requestURL ="https://raw.githubusercontent.com/max106051231/nspo/refs/heads/main/2.json";
-      var request2 = new XMLHttpRequest();
-      request2.open("GET", requestURL);
-      request2.responseType = "json";
-      request2.send();
-      request2.onload = function () {
-        var superHeroes2 = request2.response;
-        document.getElementById("level2").textContent=superHeroes2.hero+" "+superHeroes2.level;
-      };
-
-      var requestURL ="https://raw.githubusercontent.com/max106051231/nspo/refs/heads/main/3.json";
-      var request3 = new XMLHttpRequest();
-      request3.open("GET", requestURL);
-      request3.responseType = "json";
-      request3.send();
-      request3.onload = function () {
-        var superHeroes3 = request3.response;
-        document.getElementById("level3").textContent=superHeroes3.hero+" "+superHeroes3.level;
-      };
-
-
-
-      var requestURL ="https://raw.githubusercontent.com/max106051231/nspo/refs/heads/main/4.json";
-      var request4 = new XMLHttpRequest();
-      request4.open("GET", requestURL);
-      request4.responseType = "json";
-      request4.send();
-      request4.onload = function () {
-        var superHeroes4 = request4.response;
-        document.getElementById("level4").textContent=superHeroes4.hero+" "+superHeroes4.level;
-      };
-    </script>
+    
 
     <div class="container">
 

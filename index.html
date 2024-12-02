@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<!-- saved from url=(0051)https://getbootstrap.com/2.3.2/examples/signin.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>Sign in · Twitter Bootstrap</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="./排行榜樣本_files/bootstrap.css" rel="stylesheet">
+    <style type="text/css">
+      body {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        background-color: #f5f5f5;
+      }
+
+      .form-signin {
+        max-width: 300px;
+        padding: 19px 29px 29px;
+        margin: 0 auto 20px;
+        background-color: #fff;
+        border: 1px solid #e5e5e5;
+        -webkit-border-radius: 5px;
+           -moz-border-radius: 5px;
+                border-radius: 5px;
+        -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+           -moz-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+                box-shadow: 0 1px 2px rgba(0,0,0,.05);
+      }
+      .form-signin .form-signin-heading,
+      .form-signin .checkbox {
+        margin-bottom: 10px;
+      }
+      .form-signin input[type="text"],
+      .form-signin input[type="password"] {
+        font-size: 16px;
+        height: auto;
+        margin-bottom: 15px;
+        padding: 7px 9px;
+      }
+
+    </style>
+
+
+    <link href="./排行榜樣本_files/bootstrap-responsive.css" rel="stylesheet">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="../assets/js/html5shiv.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://getbootstrap.com/2.3.2/assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="https://getbootstrap.com/2.3.2/assets/ico/apple-touch-icon-114-precomposed.png">
+      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="https://getbootstrap.com/2.3.2/assets/ico/apple-touch-icon-72-precomposed.png">
+                    <link rel="apple-touch-icon-precomposed" href="https://getbootstrap.com/2.3.2/assets/ico/apple-touch-icon-57-precomposed.png">
+                                   <link rel="shortcut icon" href="https://getbootstrap.com/2.3.2/assets/ico/favicon.png">
+  </head>
+
+  <body>
+    <script type="text/javascript">
+      var requestURL ="https://raw.githubusercontent.com/max106051231/nspo/refs/heads/main/1.json";
+      var request = new XMLHttpRequest();
+      request.open("GET", requestURL);
+      request.responseType = "json";
+      request.send();
+      request.onload = function () {
+        var superHeroes1 = request.response;
+        document.getElementById("level1").textContent=superHeroes1.hero+" "+superHeroes1.level;
+      };
+      var requestURL ="https://raw.githubusercontent.com/max106051231/nspo/refs/heads/main/2.json";
+      var request2 = new XMLHttpRequest();
+      request2.open("GET", requestURL);
+      request2.responseType = "json";
+      request2.send();
+      request2.onload = function () {
+        var superHeroes2 = request2.response;
+        document.getElementById("level2").textContent=superHeroes2.hero+" "+superHeroes2.level;
+      };
+
+      var requestURL ="https://raw.githubusercontent.com/max106051231/nspo/refs/heads/main/3.json";
+      var request3 = new XMLHttpRequest();
+      request3.open("GET", requestURL);
+      request3.responseType = "json";
+      request3.send();
+      request3.onload = function () {
+        var superHeroes3 = request3.response;
+        document.getElementById("level3").textContent=superHeroes3.hero+" "+superHeroes3.level;
+      };
+
+
+
+      var requestURL ="https://raw.githubusercontent.com/max106051231/nspo/refs/heads/main/4.json";
+      var request4 = new XMLHttpRequest();
+      request4.open("GET", requestURL);
+      request4.responseType = "json";
+      request4.send();
+      request4.onload = function () {
+        var superHeroes4 = request4.response;
+        document.getElementById("level4").textContent=superHeroes4.hero+" "+superHeroes4.level;
+      };
+    </script>
+
+    <div class="container">
+
+      <form class="form-signin">
+	<div  style="text-align:center;padding:20px">
+          <h2 class="form-signin-heading">遊戲排行榜</h2>
+        </div>
+	<div  style="text-align:left">
+          <h3 style="text-align:center;padding:10px">第一名</h3>
+          <div  style="text-align:center">
+            <img src="https://i.imgur.com/tq1Pdwa.png" />
+          </div>
+          <h4 id="level1" style="text-align:center"></h4>
+        </div>
+        <div  style="text-align:left">
+          <h3 style="text-align:center;padding:10px">第二名</h3>
+          <div  style="text-align:center">
+            <img src="https://i.imgur.com/tq1Pdwa.png" />
+          </div>
+          <h4 class="form-signin-heading"id="level2" style="text-align:center"></h4>
+        </div>
+        <div  style="text-align:left">
+          <h3 style="text-align:center;padding:10px">第三名</h3>
+          <div  style="text-align:center">
+            <img src="https://i.imgur.com/4VZUabd.png" />
+          </div>
+          <h4 class="form-signin-heading"id="level3" style="text-align:center"></h4>
+        </div>
+        <div  style="text-align:left">
+          <h3 style="text-align:center;padding:10px">第四名</h3>
+          <div  style="text-align:center">
+            <img src="https://i.imgur.com/0o8YnSq.png" />
+          </div>
+          <h4 class="form-signin-heading"id="level4" style="text-align:center"></h4>
+        </div>
+        <div  style="text-align:center;padding:10px">
+       	  <button class="btn btn-large btn-primary" type="submit">刷新</button>
+        </div>
+      </form>
+
+    </div> <!-- /container -->
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="./排行榜樣本_files/jquery.js.下載"></script>
+    <script src="./排行榜樣本_files/bootstrap-transition.js.下載"></script>
+    <script src="./排行榜樣本_files/bootstrap-alert.js.下載"></script>
+    <script src="./排行榜樣本_files/bootstrap-modal.js.下載"></script>
+    <script src="./排行榜樣本_files/bootstrap-dropdown.js.下載"></script>
+    <script src="./排行榜樣本_files/bootstrap-scrollspy.js.下載"></script>
+    <script src="./排行榜樣本_files/bootstrap-tab.js.下載"></script>
+    <script src="./排行榜樣本_files/bootstrap-tooltip.js.下載"></script>
+    <script src="./排行榜樣本_files/bootstrap-popover.js.下載"></script>
+    <script src="./排行榜樣本_files/bootstrap-button.js.下載"></script>
+    <script src="./排行榜樣本_files/bootstrap-collapse.js.下載"></script>
+    <script src="./排行榜樣本_files/bootstrap-carousel.js.下載"></script>
+    <script src="./排行榜樣本_files/bootstrap-typeahead.js.下載"></script>
+
+  
+
+</body></html>
